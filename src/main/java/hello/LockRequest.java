@@ -2,7 +2,7 @@ package hello;
 
 public class LockRequest {
 
-    private String lock;
+    private boolean isLockNeeded;
     private String itemId;
 
     public String getItemId() {
@@ -14,11 +14,11 @@ public class LockRequest {
     }
 
 
-    public String getLock() {
-        return lock;
+    public boolean getLock() {
+        return isLockNeeded;
     }
 
-    public void setLock(String lock) {
-        this.lock = lock;
+    public void setLock(boolean isLockNeeded) {
+        this.isLockNeeded = isLockNeeded;
     }
 }
